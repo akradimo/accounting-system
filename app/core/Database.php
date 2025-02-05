@@ -1,9 +1,11 @@
 <?php
+// app/core/Database.php
+
 class Database {
-    private $host = 'localhost';
-    private $user = 'root';
-    private $pass = '';
-    private $dbname = 'accounting_system';
+    private $host = DB_HOST;
+    private $user = DB_USER;
+    private $pass = DB_PASS;
+    private $dbname = DB_NAME;
 
     private $dbh;
     private $stmt;
@@ -65,4 +67,3 @@ class Database {
         return $this->stmt->rowCount();
     }
 }
-?>
