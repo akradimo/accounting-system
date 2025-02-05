@@ -1,14 +1,14 @@
-<!-- app/views/home/index.php -->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accounting System</title>
+    <title><?php echo $data['title']; ?></title>
+    <link rel="stylesheet" href="/public/assets/css/bootstrap.min.css">
 </head>
 <body>
-<h1>Welcome to the Accounting System</h1>
-<p>This is the home page.</p>
+<div class="container">
+    <h1>به سیستم حسابداری خوش آمدید</h1>
+</div>
 </body>
-</html><?php
+</html>
